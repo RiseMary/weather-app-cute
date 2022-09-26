@@ -71,29 +71,27 @@ function handleSubmit(event) {
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
-let unit = "metric";
-let cityName = null;
-let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheith);
-let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsius);
-
-function displayFahrenheith(event) {
+function showFahrenheitTemperature(event) {
   event.preventDefault();
-  unit = "imperial";
-  search(cityName);
-  //edit active class
+  let temperatureElement = document.querySelector("#temperature");
+  celciusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
-  celsiusLink.classList.remove("active");
+  let fahrenheitTemperature = (celciusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-function displayCelsius(event) {
+function showCelciusTemperature(event) {
   event.preventDefault();
-  unit = "metric";
-  search(cityName);
-  //edit active class
-  celsiusLink.classList.add("active");
+  let temperatureElement = document.querySelector("#temperature");
+  celciusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
+  temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", showCelciusTemperature);
 
 search("Kolkata");
