@@ -34,7 +34,7 @@ li {
   color: rgb(45, 45, 45);
   font-size: 18px;
   font-weight: 200;
-  line-height: 19px;
+  line-height: 24px;
 }
 
 li:first-letter {
@@ -60,7 +60,23 @@ li:first-letter {
 .overview {
   margin-bottom: 20px;
 }
+.form-control {
+  border-radius: 10px;
+  background-color: #e3e8ff;
+  border: none;
+}
 
+.btn-primary {
+  border-radius: 10px;
+  background-color: #9e75ac;
+  border: none;
+  transition: ease-in transform 0.35s;
+}
+
+.btn-primary:hover {
+  border-radius: 10px;
+  background-color: #8cc8fd;
+}
 .weather-temperature {
   margin-top: 10px;
 }
