@@ -11,17 +11,18 @@ h1 {
   font-size: 44px;
   font-weight: 800;
   line-height: 28px;
-  margin-bottom: 10;
-  margin-top: 80;
+  margin-bottom: 10px;
+  margin-top: 40px;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 400;
+  margin-bottom: 40px;
 }
 
 ul {
-  margin: 0;
+  margin-top: 40px;
   padding: 0;
 }
 
@@ -40,13 +41,17 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+.container {
+  max-width: 800px;
+}
+
 .weather-app-wrapper {
-  max-width: 600px;
+  max-width: 700px;
   margin: 30px auto;
 }
 
 .weather-app {
-  padding: 20px;
+  padding: 30px;
   background: #ffffff;
   border: 1px solid #ffffff;
   border-radius: 10px;
@@ -56,7 +61,12 @@ li:first-letter {
   margin-bottom: 20px;
 }
 
+.weather-temperature {
+  margin-top: 10px;
+}
+
 .weather-temperature img {
+  margin-top: 20px;
   margin-right: 5px;
   height: 84px;
   width: 84px;
@@ -64,14 +74,14 @@ li:first-letter {
 
 .weather-temperature strong {
   color: #9e75ac;
-  font-size: 74px;
+  font-size: 84px;
   font-weight: 600;
 }
 
 .weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -34px;
+  top: -44px;
 }
 
 .weather-temperature .active {
@@ -86,11 +96,27 @@ li:first-letter {
 .weather-forecast {
   margin-top: 20px;
   text-align: center;
+  font-weight: 400;
   color: black;
 }
 
+.card-weather {
+  width: 60x;
+  height: 100px;
+  background: #f5e0ff;
+  border-radius: 10px;
+  padding: 5px;
+  transition: transform 0.35s;
+}
+
+.card-weather:hover {
+  transform: scale(1.1);
+  background-color: rgb(140, 200, 253);
+}
+
 .weather-forecast-date {
-  font-size: 16px;
+  font-size: 18px;
+  font-weight: 400;
   opacity: 0.5;
 }
 
@@ -99,4 +125,10 @@ li:first-letter {
 }
 .weather-forecast-temperatures {
   font-size: 13px;
+}
+
+.ref-information {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
