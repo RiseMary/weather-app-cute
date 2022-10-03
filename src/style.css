@@ -48,6 +48,8 @@ li:first-letter {
 .weather-app-wrapper {
   max-width: 700px;
   margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: rgba(55, 55, 74, 0.2) 0px 5px 5px 0;
 }
 
 .weather-app {
@@ -66,17 +68,40 @@ li:first-letter {
   border: none;
 }
 
-.btn-primary {
+.search {
+  width: 135px;
+  height: 38px;
   border-radius: 10px;
+  color: #ffffff;
   background-color: #9e75ac;
   border: none;
-  transition: ease-in transform 0.35s;
+  margin-bottom: 10px;
+  transition: all 200ms ease;
+  box-shadow: rgba(55, 55, 74, 0.2) 0px 5px 5px 0;
 }
 
-.btn-primary:hover {
+.search:hover {
   border-radius: 10px;
-  background-color: #8cc8fd;
+  background-color: #000000;
 }
+
+.current-location {
+  background-color: #8cc8fd;
+  width: 135px;
+  height: 38px;
+  border-radius: 10px;
+  color: #ffffff;
+  border: none;
+  margin-bottom: 10px;
+  transition: all 200ms ease;
+  box-shadow: rgba(55, 55, 74, 0.2) 0px 5px 5px 0;
+}
+
+.current-location:hover {
+  border-radius: 10px;
+  background-color: #000000;
+}
+
 .weather-temperature {
   margin-top: 10px;
 }
